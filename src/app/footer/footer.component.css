@@ -1,0 +1,12 @@
+.navbar {
+  height: 2rem;
+  justify-content: space-between;
+  text-align: center;
+  font-size: small;
+  color:black;
+  position: absolute;;
+   bottom:0px;
+   height:30px;
+   background:#999;
+}
+

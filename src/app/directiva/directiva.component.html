@@ -1,0 +1,17 @@
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayoutAlign="center">
+    <mat-button-toggle (click)="setHabilitar()">{{ habilitar==true? 'OCULTAR' : 'MOSTRAR' }}</mat-button-toggle>
+</div>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="100%">
+  <mat-card>
+    <mat-card-header color="primary">
+      <mat-card-title>Listado de cursos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list *ngIf="habilitar == true">
+      <mat-list-item *ngFor="let curso of listaCurso"> {{ curso }} </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+  </div>
+</div>

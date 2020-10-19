@@ -1,0 +1,26 @@
+.mat-card-header{
+  background-color: salmon;
+
+  padding:5px !important;
+}
+
+.mat-card{
+  padding:0 !important;
+}
+
+.mat-list {
+  padding:0;
+}
+
+.mat-list-item{
+  background-color:thistle;
+}
+
+.mat-button-toggle{
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 2rem;
+}
