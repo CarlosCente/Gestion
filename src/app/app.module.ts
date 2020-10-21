@@ -15,8 +15,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
-import { ClientesComponent } from './clientes/clientes.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
+import { ClientesComponent } from './clientes/clientes.component';
+import { ClienteService } from './clientes/cliente.service';
 
 
 @NgModule({
@@ -37,9 +41,12 @@ import { ClientesComponent } from './clientes/clientes.component';
     MatBadgeModule,
     MatToolbarModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

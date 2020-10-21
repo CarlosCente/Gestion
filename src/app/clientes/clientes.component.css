@@ -1,0 +1,22 @@
+#tablaClientes{
+  margin-top: 2rem;
+}
+
+.mat-card-header{
+  background-color: darkseagreen;
+
+  padding:5px !important;
+}
+
+.mat-card{
+  padding:0 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
